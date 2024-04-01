@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chikorita</title>
+
+    <!-- Link to the style2.css file -->
+    <link rel="stylesheet" type="text/css" href="../style2.css">
+    <link rel="icon" href="chikorita.png" type="image/png">
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <audio id="disappearingEffectAudio" src="../../Extra-resources/poke-reveal.mp3"></audio>
+
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content chikorita-content" onmouseover="showInfo('chikorita')" onmouseout="hideInfo('chikorita')">
+                <a href="https://pokemondb.net/pokedex/chikorita" target="_blank">
+                    <img id="poke-background-column" src="chikorita2.png" alt="Chikorita">
+                    <p class="info-text" id="chikorita-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content bayleef-content" onmouseover="showInfo('bayleef')" onmouseout="hideInfo('bayleef')">
+                <a href="https://pokemondb.net/pokedex/bayleef" target="_blank">
+                    <img id="poke-background-column" src="bayleef.png" alt="Bayleef">
+                    <p class="info-text" id="bayleef-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content meganium-content" onmouseover="showInfo('meganium')" onmouseout="hideInfo('meganium')">
+                <a href="https://pokemondb.net/pokedex/meganium" target="_blank">
+                    <img id="poke-background-column" src="meganium.png" alt="Meganium">
+                    <p class="info-text" id="meganium-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript File -->
+    <script src="../script2.js"></script>
+    
+</body>
+</html>

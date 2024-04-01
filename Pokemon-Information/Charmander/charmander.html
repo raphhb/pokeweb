@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charmander</title>
+
+    <!-- Link to the style2.css file -->
+    <link rel="stylesheet" type="text/css" href="../style2.css">
+    <link rel="icon" href="charmander.png" type="image/png">
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <audio id="disappearingEffectAudio" src="../../Extra-resources/poke-reveal.mp3"></audio>
+
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content charmander-content" onmouseover="showInfo('charmander')" onmouseout="hideInfo('charmander')">
+                <a href="https://pokemondb.net/pokedex/charmander" target="_blank">
+                    <img id="poke-background-column" src="charmander2.png" alt="Charmander">
+                    <p class="info-text" id="charmander-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content charmeleon-content" onmouseover="showInfo('charmeleon')" onmouseout="hideInfo('charmeleon')">
+                <a href="https://pokemondb.net/pokedex/charmeleon" target="_blank">
+                    <img id="poke-background-column" src="charmeleon.png" alt="Charmeleon">
+                    <p class="info-text" id="charmeleon-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content charizard-content" onmouseover="showInfo('charizard')" onmouseout="hideInfo('charizard')">
+                <a href="https://pokemondb.net/pokedex/charizard" target="_blank">
+                    <img id="poke-background-column" src="charizard.png" alt="Charizard">
+                    <p class="info-text" id="charizard-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript File -->
+    <script src="../script2.js"></script>
+</body>
+</html>

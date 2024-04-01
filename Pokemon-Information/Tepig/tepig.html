@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tepig</title>
+
+    <!-- Link to the style2.css file -->
+    <link rel="stylesheet" type="text/css" href="../style2.css">
+    <link rel="icon" href="tepig.png" type="image/png">
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- Add an audio element for the disappearing effect -->
+    <audio id="disappearingEffectAudio" src="../../Extra-resources/poke-reveal.mp3"></audio>
+
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content tepig-content" onmouseover="showInfo('tepig')" onmouseout="hideInfo('tepig')">
+                <a href="https://pokemondb.net/pokedex/tepig" target="_blank">
+                    <img id="poke-background-column" src="tepig2.png" alt="Tepig">
+                    <p class="info-text" id="tepig-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content pignite-content" onmouseover="showInfo('pignite')" onmouseout="hideInfo('pignite')">
+                <a href="https://pokemondb.net/pokedex/pignite" target="_blank">
+                    <img id="poke-background-column" src="pignite.png" alt="Pignite">
+                    <p class="info-text" id="pignite-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content emboar-content" onmouseover="showInfo('emboar')" onmouseout="hideInfo('emboar')">
+                <a href="https://pokemondb.net/pokedex/emboar" target="_blank">
+                    <img id="poke-background-column" src="emboar.png" alt="Emboar">
+                    <p class="info-text" id="emboar-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript File -->
+    <script src="../script2.js"></script>
+</body>
+</html>

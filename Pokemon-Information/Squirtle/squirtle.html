@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squirtle</title>
+
+    <!-- Link to the style2.css file -->
+    <link rel="stylesheet" type="text/css" href="../style2.css">
+    <link rel="icon" href="squirtle.png" type="image/png">
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- Add an audio element for the disappearing effect -->
+    <audio id="disappearingEffectAudio" src="../../Extra-resources/poke-reveal.mp3"></audio>
+
+    <div class="column blue">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content squirtle-content" onmouseover="showInfo('squirtle')" onmouseout="hideInfo('squirtle')">
+                <a href="https://pokemondb.net/pokedex/squirtle" target="_blank">
+                    <img id="poke-background-column" src="Squirtle2.png" alt="Squirtle">
+                    <p class="info-text" id="squirtle-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column blue">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content wartortle-content" onmouseover="showInfo('wartortle')" onmouseout="hideInfo('wartortle')">
+                <a href="https://pokemondb.net/pokedex/wartortle" target="_blank">
+                    <img id="poke-background-column" src="Wartortle.png" alt="Wartortle">
+                    <p class="info-text" id="wartortle-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column blue">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content blastoise-content" onmouseover="showInfo('blastoise')" onmouseout="hideInfo('blastoise')">
+                <a href="https://pokemondb.net/pokedex/blastoise" target="_blank">
+                    <img id="poke-background-column" src="Blastoise.png" alt="Blastoise">
+                    <p class="info-text" id="blastoise-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript File -->
+    <script src="../script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyndaquil</title>
+
+    <!-- Link to the style2.css file -->
+    <link rel="stylesheet" type="text/css" href="../style2.css">
+    <link rel="icon" href="cyndaquil.png" type="image/png">
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <audio id="disappearingEffectAudio" src="../../Extra-resources/poke-reveal.mp3"></audio>
+
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content cyndaquil-content" onmouseover="showInfo('cyndaquil')" onmouseout="hideInfo('cyndaquil')">
+                <a href="https://pokemondb.net/pokedex/cyndaquil2" target="_blank">
+                    <img id="poke-background-column" src="cyndaquil2.png" alt="Cyndaquil">
+                    <p class="info-text" id="cyndaquil-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content quilava-content" onmouseover="showInfo('quilava')" onmouseout="hideInfo('quilava')">
+                <a href="https://pokemondb.net/pokedex/quilava" target="_blank">
+                    <img id="poke-background-column" src="quilava.png" alt="Quilava">
+                    <p class="info-text" id="quilava-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content typhlosion-content" onmouseover="showInfo('typhlosion')" onmouseout="hideInfo('typhlosion')">
+                <a href="https://pokemondb.net/pokedex/typhlosion" target="_blank">
+                    <img id="poke-background-column" src="typhlosion.png" alt="Typhlosion">
+                    <p class="info-text" id="typhlosion-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Javascript File -->
+    <script src="../script2.js"></script>
+</body>
+</html>

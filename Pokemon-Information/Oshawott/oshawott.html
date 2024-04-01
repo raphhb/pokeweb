@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oshawott</title>
+
+    <!-- Link to the style2.css file -->
+    <link rel="stylesheet" type="text/css" href="../style2.css">
+    <link rel="icon" href="oshawott.png" type="image/png">
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- Add an audio element for the disappearing effect -->
+    <audio id="disappearingEffectAudio" src="../../Extra-resources/poke-reveal.mp3"></audio>
+
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content oshawott-content" onmouseover="showInfo('oshawott')" onmouseout="hideInfo('oshawott')">
+                <a href="https://pokemondb.net/pokedex/oshawott" target="_blank">
+                    <img id="poke-background-column" src="oshawott2.png" alt="Oshawott">
+                    <p class="info-text" id="oshawott-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content dewott-content" onmouseover="showInfo('dewott')" onmouseout="hideInfo('dewott')">
+                <a href="https://pokemondb.net/pokedex/dewott" target="_blank">
+                    <img id="poke-background-column" src="dewott.png" alt="Dewott">
+                    <p class="info-text" id="dewott-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content samurott-content" onmouseover="showInfo('samurott')" onmouseout="hideInfo('samurott')">
+                <a href="https://pokemondb.net/pokedex/samurott" target="_blank">
+                    <img id="poke-background-column" src="samurrot.png" alt="Samurott">
+                    <p class="info-text" id="samurott-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript File -->
+    <script src="../script2.js"></script>
+</body>
+</html>

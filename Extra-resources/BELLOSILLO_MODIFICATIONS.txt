@@ -1,0 +1,99 @@
+Modifications Made to the Final Project:
+
+(P.S. Summarized Version at the bottom part)
+
+Minor Changes/Modifications:
+1. **Code Organization:**
+   To enhance code cleanliness, two separate JavaScript files were created - one for each Pokemon and one for the website's main functionality. Previously, all scripts were written directly in the HTML. The organization was improved using the following snippet in the HTML:
+   ```html
+   <!-- Javascript File -->
+   <script src="script.js"></script>
+
+2. **CSS Adjustments:**
+   Minor CSS adjustments were made to align with the added JavaScript effects.
+
+Major Modifications/Effects Added:
+1. ** Loading Screen:**
+
+- A loading screen with a GIF was implemented in the index.html.
+- A JavaScript code was added to animate the loading screen:
+	// Page loading animation
+	setTimeout(function () {
+   	 document.body.classList.add("loaded");
+	}, 1500);
+
+2. **Pokemon Sound Effect:**
+- Each of the 12 Pokemon now has a unique sound effect. The JavaScript function handlePokemonSound manages the sound effects based on mouse events.
+	function handlePokemonSound(pokemonId, soundPath) {
+    		// ... (full code in the JavaScript file)
+	}
+
+3. **Blue Pokeball Button**:
+
+-A new pokeball button (blue) was added. When clicked, it toggles the background to a water scenery and plays a notification sound effect.
+	playButton2.addEventListener('click', function () {
+   		 // ... (full code in the JavaScript file)
+	});
+
+4. **Purple Pokeball Button:**
+
+Another pokeball button (purple) was introduced. When clicked, it displays the programmer's information, accompanied by a notification sound effect.
+
+	playButton3.addEventListener('click', function () {
+    		// ... (full code in the JavaScript file)
+	});
+
+5. **Green Pokeball Button:**
+
+An additional pokeball button (green) was incorporated. When clicked, it reveals Pokemon trivia and triggers a notification sound effect.
+	playButton4.addEventListener('click', function () {
+    		// ... (full code in the JavaScript file)
+	});
+
+6. **Pokemon Card Reveal Animation Effect:**
+
+Hovering over a Pokemon card triggers a reveal animation effect by adjusting visibility/opacity to create a "selected" effect.
+
+	content.classList.add('visible');
+
+7. **Labels/Instruction Text:**
+
+Labels and instruction text are set to reveal only when pokeball buttons are hovered over.
+
+	[playButton, playButton2].forEach(button => {
+   		 // ... (full code in the JavaScript file)
+	});
+
+
+
+Here's a summarized version of the changes in bullet form:
+
+Minor Changes/Modifications:
+
+**Code organization improved by separating scripts into two JavaScript files, one for each Pokemon and one for the website's main functionality.
+**Minor CSS adjustments made to align with the added JavaScript effects.
+
+Major Modifications/Effects Added:
+
+**Loading Screen:
+	-Implemented a loading screen with a GIF.
+	-Added JavaScript code to animate the loading screen.
+**Pokemon Sound Effect:
+	-Each of the 12 Pokemon now has a unique sound effect.
+	-Utilized a JavaScript function (handlePokemonSound) to manage sound effects based on mouse events.
+**Blue Pokeball Button:
+	-Added a new pokeball button (blue) that toggles the background to a water scenery when clicked.
+	-Incorporated a notification sound effect on button click.
+**Purple Pokeball Button:
+	-Introduced another pokeball button (purple) that displays the programmer's information when clicked.
+	-Included a notification sound effect on button click.
+**Green Pokeball Button:
+	-Added an extra pokeball button (green) that reveals Pokemon trivia when clicked.
+	-Implemented a notification sound effect on button click.
+**Pokemon Card Reveal Animation Effect:
+	-Enabled a reveal animation effect for Pokemon cards when hovered by adjusting visibility/opacity.
+**Labels/Instruction Text:
+	-Set labels and instruction text to reveal only when pokeball buttons are hovered over.
+
+
+

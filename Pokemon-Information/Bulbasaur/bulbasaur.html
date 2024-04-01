@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulbasaur</title>
+ 
+    <!-- Link to the style2.css file -->
+    <link rel="stylesheet" type="text/css" href="../style2.css">
+    <link rel="icon" href="bulbasaur.png" type="image/png">
+    <style>
+ 
+    </style>
+</head>
+<body>
+ 
+    <audio id="disappearingEffectAudio" src="../../Extra-resources/poke-reveal.mp3"></audio>
+ 
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content bulbasaur-content" onmouseover="showInfo('bulbasaur')" onmouseout="hideInfo('bulbasaur')">
+                <a href="https://pokemondb.net/pokedex/bulbasaur" target="_blank">
+                    <img id="poke-background-column" src="Bulbasaur2.png" alt="Bulbasaur">
+                    <p class="info-text" id="bulbasaur-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content ivysaur-content" onmouseover="showInfo('ivysaur')" onmouseout="hideInfo('ivysaur')">
+                <a href="https://pokemondb.net/pokedex/ivysaur" target="_blank">
+                    <img id="poke-background-column" src="Ivysaur.png" alt="Ivysaur">
+                    <p class="info-text" id="ivysaur-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content venusaur-content" onmouseover="showInfo('venusaur')" onmouseout="hideInfo('venusaur')">
+                <a href="https://pokemondb.net/pokedex/venusaur" target="_blank">
+                    <img id="poke-background-column" src="Venusaur.png" alt="Venusaur">
+                    <p class="info-text" id="venusaur-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Javascript File -->
+    <script src="../script2.js"></script>
+    
+</body>
+</html>

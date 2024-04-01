@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empoleon</title>
+
+    <!-- Link to the style2.css file -->
+    <link rel="stylesheet" type="text/css" href="../style2.css">
+    <link rel="icon" href="piplup.png" type="image/png">
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- Add an audio element for the disappearing effect -->
+    <audio id="disappearingEffectAudio" src="../../Extra-resources/poke-reveal.mp3"></audio>
+
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content piplup-content" onmouseover="showInfo('piplup')" onmouseout="hideInfo('piplup')">
+                <a href="https://pokemondb.net/pokedex/piplup" target="_blank">
+                    <img id="poke-background-column" src="piplup2.png" alt="Piplup">
+                    <p class="info-text" id="piplup-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content prinplup-content" onmouseover="showInfo('prinplup')" onmouseout="hideInfo('prinplup')">
+                <a href="https://pokemondb.net/pokedex/prinplup" target="_blank">
+                    <img id="poke-background-column" src="prinplup.png" alt="Prinplup">
+                    <p class="info-text" id="prinplup-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content empoleon-content" onmouseover="showInfo('empoleon')" onmouseout="hideInfo('empoleon')">
+                <a href="https://pokemondb.net/pokedex/empoleon" target="_blank">
+                    <img id="poke-background-column" src="empoleon.png" alt="Empoleon">
+                    <p class="info-text" id="empoleon-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript File -->
+    <script src="../script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totodile</title>
+
+    <!-- Link to the style2.css file -->
+    <link rel="stylesheet" type="text/css" href="../style2.css">
+    <link rel="icon" href="totodile.png" type="image/png">
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- Add an audio element for the disappearing effect -->
+    <audio id="disappearingEffectAudio" src="../../Extra-resources/poke-reveal.mp3"></audio>
+
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content totodile-content" onmouseover="showInfo('totodile')" onmouseout="hideInfo('totodile')">
+                <a href="https://pokemondb.net/pokedex/totodile" target="_blank">
+                    <img id="poke-background-column" src="totodile2.png" alt="Totodile">
+                    <p class="info-text" id="totodile-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content croconaw-content" onmouseover="showInfo('croconaw')" onmouseout="hideInfo('croconaw')">
+                <a href="https://pokemondb.net/pokedex/croconaw" target="_blank">
+                    <img id="poke-background-column" src="croconaw.png" alt="Croconaw">
+                    <p class="info-text" id="croconaw-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content feraligatr-content" onmouseover="showInfo('feraligatr')" onmouseout="hideInfo('feraligatr')">
+                <a href="https://pokemondb.net/pokedex/feraligatr" target="_blank">
+                    <img id="poke-background-column" src="feraligatr.png" alt="Feraligatr">
+                    <p class="info-text" id="feraligatr-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript File -->
+    <script src="../script2.js"></script>
+</body>
+</html>

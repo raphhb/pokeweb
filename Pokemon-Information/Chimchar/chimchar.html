@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chimchar</title>
+
+    <!-- Link to the style2.css file -->
+    <link rel="stylesheet" type="text/css" href="../style2.css">
+    <link rel="icon" href="chimchar.png" type="image/png">
+    <style>
+
+    </style>
+</head>
+<body>
+    <audio id="disappearingEffectAudio" src="../../Extra-resources/poke-reveal.mp3"></audio>
+
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content chimchar-content" onmouseover="showInfo('chimchar')" onmouseout="hideInfo('chimchar')">
+                <a href="https://pokemondb.net/pokedex/chimchar" target="_blank">
+                    <img id="poke-background-column" src="chimchar2.png" alt="Chimchar">
+                    <p class="info-text" id="chimchar-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content monferno-content" onmouseover="showInfo('monferno')" onmouseout="hideInfo('monferno')">
+                <a href="https://pokemondb.net/pokedex/monferno" target="_blank">
+                    <img id="poke-background-column" src="monferno.png" alt="Monferno">
+                    <p class="info-text" id="monferno-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content infernape-content" onmouseover="showInfo('infernape')" onmouseout="hideInfo('infernape')">
+                <a href="https://pokemondb.net/pokedex/infernape" target="_blank">
+                    <img id="poke-background-column" src="infernape.png" alt="Infernape">
+                    <p class="info-text" id="infernape-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript File -->
+    <script src="../script2.js"></script>
+</body>
+</html>

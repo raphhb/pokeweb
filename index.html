@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeWeb</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Extra-resources/pokeweb_icon.png" type="image/png">
+</head>
+
+<body>
+
+    <div class="loading-screen" id="loading-screen">
+        <img src="Extra-resources/loading_screen.gif" alt="Loading Screen">
+    </div>
+
+    <div class="main-content" id="main-content">
+        <img id="loadingImage" src="Extra-resources/poke-night-bg.jpg" alt="Poke Loading GIF" id="loadingImage"
+            style="display: none;">
+        <img id="water" src="Extra-resources\trial water.gif" alt="water" style="display: none;">
+        <div class="pokemon">
+
+            <a href="Pokemon-Information\Bulbasaur\bulbasaur.html" target="_blank"><img id="bulbasaur"
+                    src="Pokemon-Information\Bulbasaur\bulbasaur.png" alt="bulbasaur"></a>
+            <a href="Pokemon-Information\Charmander\charmander.html" target="_blank"><img id="charmander"
+                    src="Pokemon-Information\Charmander\charmander.png" alt="charmander"></a>
+            <a href="Pokemon-Information\Squirtle\squirtle.html" target="_blank"><img id="squirtle"
+                    src="Pokemon-Information\Squirtle\squirtle.png" alt="squirtle"></a>
+
+            <a href="Pokemon-Information\Snivy\snivy.html" target="_blank"><img id="snivy"
+                    src="Pokemon-Information\Snivy\snivy.png" alt="snivy"></a>
+            <a href="Pokemon-Information\Tepig\tepig.html" target="_blank"><img id="tepig"
+                    src="Pokemon-Information\Tepig\tepig.png" alt="tepig"></a>
+            <a href="Pokemon-Information\Oshawott\oshawott.html" target="_blank"><img id="oshawott"
+                    src="Pokemon-Information\Oshawott\oshawott.png" alt="oshawott"></a>
+
+            <a href="Pokemon-Information\Turtwig\turtwig.html" target="_blank"><img id="turtwig"
+                    src="Pokemon-Information\Turtwig\turtwig.png" alt="turtwig"></a>
+            <a href="Pokemon-Information\Chimchar\chimchar.html" target="_blank"><img id="chimchar"
+                    src="Pokemon-Information\Chimchar\chimchar.png" alt="chimchar"></a>
+            <a href="Pokemon-Information\Piplup\piplup.html" target="_blank"><img id="piplup"
+                    src="Pokemon-Information\Piplup\piplup.png" alt="piplup"></a>
+
+            <a href="Pokemon-Information\Chikorita\chikorita.html" target="_blank"><img id="chikorita"
+                    src="Pokemon-Information\Chikorita\chikorita.png" alt="chikorita"></a>
+            <a href="Pokemon-Information\Cyndaquil\cyndaquil.html" target="_blank"><img id="cyndaquil"
+                    src="Pokemon-Information\Cyndaquil\cyndaquil.png" alt="cyndaquil"></a>
+            <a href="Pokemon-Information\Totodile\totodile.html" target="_blank"><img id="totodile"
+                    src="Pokemon-Information\Totodile\totodile.png" alt="totodile"></a>
+
+        </div>
+
+        <div class="labels">
+            <button id="template-link" class="styled-button"
+                onclick="window.open('https://www.canva.com/design/DAF1KCq1aH8/KGm7rFhTV7OJlQxEf75r2w/view?utm_content=DAF1KCq1aH8&utm_campaign=designshare&utm_medium=link&utm_source=editor')">Pokedex
+                Template(s)</button>
+            <label id=instruction>For the best experience, please keep your zoom level at <b>100%.</b></p>
+                <label id="instruction2">Press to ON/OFF 🔊 Music:</label>
+                <label id="instruction3">Click any pokemon</label>
+                <label id="instruction4">PokeTip: Click <b>'Pokemon Logo'</b> twice to toggle between day🌞 and night🌑
+                    backgrounds</label>
+                <label id="instruction5">Press to SHOW/HIDE Water🌊 Scenery:</label>
+                <label id="instruction6">Press to SHOW/HIDE Profile🧑:</label>
+                <label id="instruction7">Press to SHOW/HIDE Pokemon Trivia⚡:</label>
+        </div>
+
+        <a href="#" id="logoLink">
+            <img id="logo" src="Extra-resources\Pokemon Logo.png" alt="Pokemon Logo">
+        </a>
+
+        <!-- To design the audio play button -->
+        <img src="Extra-resources/red-pokeball.png" alt="Click me" id="playButton" style="cursor: pointer;">
+        <img src="Extra-resources/blue-pokeball.png" alt="Click me" id="playButton2" style="cursor: pointer;">
+        <img src="Extra-resources/purple-pokeball.png" alt="Click me" id="playButton3" style="cursor: pointer;">
+        <img src="Extra-resources/green-pokeball.png" alt="Click me" id="playButton4" style="cursor: pointer;">
+        <!-- Add a new image element for playButton3 -->
+        <img src="" alt="Clicked playButton3" id="playButton3Image" style="display: none;">
+        <img src="" alt="Clicked playButton4" id="playButton4Image" style="display: none;">
+
+        <audio id="audio" src="Extra-resources\Pokemon-Theme-Song.mp3" autoplay volume="0.7" loop></audio>
+    </div>
+
+    <!-- Javascript File -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

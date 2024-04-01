@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turtwig</title>
+
+    <!-- Link to the style2.css file -->
+    <link rel="stylesheet" type="text/css" href="../style2.css">
+    <link rel="icon" href="turtwig.png" type="image/png">
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- Add an audio element for the disappearing effect -->
+    <audio id="disappearingEffectAudio" src="../../Extra-resources/poke-reveal.mp3"></audio>
+
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content turtwig-content" onmouseover="showInfo('turtwig')" onmouseout="hideInfo('turtwig')">
+                <a href="https://pokemondb.net/pokedex/turtwig" target="_blank">
+                    <img id="poke-background-column" src="turtwig2.png" alt="Turtwig">
+                    <p class="info-text" id="turtwig-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content grotle-content" onmouseover="showInfo('grotle')" onmouseout="hideInfo('grotle')">
+                <a href="https://pokemondb.net/pokedex/grotle" target="_blank">
+                    <img id="poke-background-column" src="grotle.png" alt="Grotle">
+                    <p class="info-text" id="grotle-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="pokemon-container">
+            <img class="cover-pic" src="../../Extra-resources/pokecover.webp" alt="Cover Pic" onclick="revealContent(this)">
+            <div class="card-label">Click the card to reveal content</div>
+            <div class="pokemon-content torterra-content" onmouseover="showInfo('torterra')" onmouseout="hideInfo('torterra')">
+                <a href="https://pokemondb.net/pokedex/torterra" target="_blank">
+                    <img id="poke-background-column" src="torterra.png" alt="Torterra">
+                    <p class="info-text" id="torterra-info">Click for more info</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript File -->
+    <script src="../script2.js"></script>
+</body>
+</html>
